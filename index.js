@@ -18,11 +18,7 @@ app.use('/api/studentRoutes', require('./routes/myApi'));
 
 
 app.get('/', (req, res) => {
-  res.send('You Are Connected');
-  console.log(os.freemem())
-console.log(os.homedir())
-console.log(os.type())
-console.log(os.uptime())
+  res.send('You Are Connected To WebApp')
 });
 
 const start = async () => {
@@ -30,6 +26,15 @@ const start = async () => {
     await connectToMongo(process.env.MONGODB_URL);
     app.listen(PORT, () => {
       console.log(`Server is running on port http://localhost:${PORT}`);
+      console.log("Server Info As Bellow")
+      console.log(os.freemem())
+       console.log(os.homedir())
+        console.log(os.type())
+          console.log(os.uptime())
+      console.log(os.EOL)
+console.log(os.platform())
+console.log(os.release())
+console.log(os.loadavg())
       
     });
   } catch (error) {
