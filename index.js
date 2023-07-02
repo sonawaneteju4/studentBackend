@@ -27,14 +27,14 @@ const start = async () => {
     app.listen(PORT, () => {
       console.log(`Server is running on port http://localhost:${PORT}`);
       console.log("Server Info As Bellow")
-      console.log("Free Memory"+os.freemem())
-       console.log("HomeDir"+os.homedir())
-        console.log("osType"+os.type())
-          console.log("uptime"+os.uptime())
-      console.log("EQL"+os.EOL)
-console.log("PlatForm"+os.platform())
-console.log("release"+os.release())
-console.log("Loading"+os.loadavg())
+      console.log("Free Memory  "+os.freemem())
+       console.log("HomeDir  "+os.homedir())
+        console.log("osType  "+os.type())
+          console.log("uptime  "+os.uptime())
+      console.log("EQL    "+os.EOL)
+console.log("PlatForm    "+os.platform())
+console.log("release    "+os.release())
+console.log("Loading    "+os.loadavg())
       
     });
   } catch (error) {
