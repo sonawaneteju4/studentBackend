@@ -9,7 +9,8 @@ const connectToMongo = () =>{
         useUnifiedTopology: true,
       })
       .then(() => {
-        console.log("Connection Done");
+        console.log("Connection Done/ Your Aree Connected DB");
+          
       })
       .catch(() => {
         console.log(" Err ");
